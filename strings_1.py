@@ -34,25 +34,26 @@ def first_half(string):
     return string[:b]
 
 
-# def without_end(string):
-#     a = string
-#
+def without_end(string):
+    string = string[1:]
+    return string[:-1]
 
 
+def combo_string(a,b):
+    if len(a) > len(b):
+        return b + a + b
+    else:
+        return a + b + a
 
 
+def non_start(a, b):
+    a = a[1:]
+    b = b[1:]
+    return a + b
 
 
-
-
-
-
-
-
-
-
-
-
+def left2(string):
+    return string[2:] + string[:2]
 
 
 
