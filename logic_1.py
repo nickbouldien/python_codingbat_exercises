@@ -89,14 +89,34 @@ def in1to10(n, outside_mode):
             return False
 
 
+# def near_ten(num):
+#     if (num % 10 < 12 or num % 10 > 8 ) or (num % 5 < 12 or num % 5 > 8) or (num % 2 < 12 or num % 2 >8) or (num % 1 < 12 or num % 1 > 8):
+#         return True
+#     else:
+#         return False
+#
+# def near_ten(num):
+#     if (num % 10 < 2) or (num % 5 < 2) or (num % 2 < 2) or (num % 1 < 2):
+#         return True
+#     else:
+#         return False
+
+
+# in javascript
+
+# // yes I think you're overthinking it! Here's my interpretation:
+# function nick(num){
+#   return (num % 10 <= 2 || num % 10 >= 8);
+# }
+#
+# // test function
+# for (var i = 0; i < 50; i++){
+#   console.log("num: " + i + "- result: " + nick(i));
+# }
+
 def near_ten(num):
-    if num == 0:
-        return True
-    else:
-        if ( num % 10 < 2 or num % 2 < 2 or num % 5 < 2 ):
-            return True
-        else:
-            return False
+    return (num %10 <= 2 or num % 10 >= 8)
+
 
 
 def love6(a, b):
@@ -104,12 +124,10 @@ def love6(a, b):
         return True
     elif abs(a - b) == 6 or abs(b-a) == 6:
         return True
-    elif abs(a + b) == 6 or abs(b+a) == 6:
+    elif a + b == 6:
+        return True
     else:
         return False
-
-
-
 
 
 
