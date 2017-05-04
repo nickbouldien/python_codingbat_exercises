@@ -33,10 +33,49 @@ def reverse3(nums):
     return final
 
 def max_end3(nums):
-
     if nums[0] > nums[-1]:
         nums[1] = nums[0]
         nums[2] = nums[0]
     else:
         nums[0] = nums[-1]
         nums[1] = nums[-1]
+    return nums
+
+
+def sum2(nums):
+    if len(nums) == 0:
+        return 0
+    elif len(nums) < 2:
+        return nums[0]
+    else:
+        return nums[0] + nums[1]
+
+
+def middle_way(a,b):
+    return [a[1]].extend( b[1])
+
+    listone = [a[1]]
+    return listone.extend(b[1])
+
+
+def make_ends(nums):
+  arr = []
+  #print(nums[0])
+  #print(arr)
+  arr.append(nums[0])
+  arr.append(nums[len(nums)-1])
+  return arr
+
+
+def has23(nums):
+    return True if 2 in nums or 3 in nums else False
+  
+
+
+
+
+
+
+
+
+#
