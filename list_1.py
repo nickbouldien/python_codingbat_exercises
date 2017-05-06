@@ -52,10 +52,18 @@ def sum2(nums):
 
 
 def middle_way(a,b):
-    return [a[1]].extend( b[1])
+    arr = []
+    arr.append(a[1])
+    arr.append(b[1])
+    return arr
 
-    listone = [a[1]]
-    return listone.extend(b[1])
+
+
+
+
+
+
+
 
 
 def make_ends(nums):
@@ -69,7 +77,7 @@ def make_ends(nums):
 
 def has23(nums):
     return True if 2 in nums or 3 in nums else False
-  
+
 
 
 

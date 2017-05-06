@@ -11,10 +11,16 @@ def front_times(string, n):
       return front * n
 
 
+
 def string_bits(string):
+    newString = ''
     for char in range(len(string)):
         if char % 2 == 0:
-            print(string[char])
+            #print(string[char])
+            newString = newString + string[char]
+            #print(newString)
+    return newString
+
 
 
 def string_splosion(string):
@@ -25,6 +31,27 @@ def string_splosion(string):
 
 
 def last2(string):
+
+
+
+
+
+
+
+
+
+def array123(nums):
+
+    for num in nums:
+        if nums[num]
+
+
+
+
+
+
+
+
 
 
 
