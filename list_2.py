@@ -39,13 +39,75 @@ def sum13(nums):
   return sum
 
 
-####
+
+
+def has22(nums):
+    #for i,num in enumerate(nums):
+    for i in range(len(nums)-1):
+        if nums[i] == 2 and nums[i+1] == 2:
+            #arr = True
+            return True
+    return False
+
+
+def sum67(nums):
+    total = 0
+    a = nums.index(6)
+    b = nums.index(7)
+    #
+    # for i in range(0:a):
+    #     total = total + nums[i]
+    # for j in range(b:len(nums)):
+    #     total = total + nums[j]
+
+    while i<a:
+        total = total + nums[i]
+        i += 1
+    for j, num in enumerate(nums, start=b):
+        total += nums[j]
+
+    return total
+
+
 def sum67(nums):
     total = 0
 
-    for num in nums:
-        total = total + num
-        if num == 6:
-            pass
+    try:
+      a = nums.index(6)
+      print(a)
+      b = nums.index(7)
+      print(b)
+    except:
+      return 0
+    #
+    # for i in range(0:a):
+    #     total = total + nums[i]
+    # for j in range(b:len(nums)):
+    #     total = total + nums[j]
+    i=0
+    while i<a:
+        total = total + nums[i]
+        i += 1
+    for j, num in enumerate(nums, start=b):
+        total += nums[j]
 
     return total
+
+
+#sum67([1, 2, 2])
+sum67([1, 2, 2, 6, 99, 99, 7])
+#sum67([1, 1, 6, 7, 2])
+
+
+
+
+
+
+
+
+
+
+
+
+
+##
