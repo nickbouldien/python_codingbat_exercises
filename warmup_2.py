@@ -43,8 +43,7 @@ def last2(string):
 def array123(nums):
 
     for num in nums:
-        if nums[num]
-
+        if num 
 
 
 
